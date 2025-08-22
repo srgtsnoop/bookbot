@@ -2,8 +2,9 @@ def get_book_text(filepath):
     """Takes a filepath and returns the contents of the file as a string."""
     with open(filepath) as f:
         return f.read()
-    
-def get_number_of_words(text):
+
+def get_num_words(text):
+    """Takes a string and returns the number of words in it."""
     words = text.split()
     return len(words)
 
