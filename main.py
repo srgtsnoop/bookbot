@@ -1,4 +1,4 @@
-from stats import get_num_words
+from stats import get_num_words, get_characters
 
 def get_book_text(filepath):
     """Takes a filepath and returns the contents of the file as a string."""
@@ -11,6 +11,9 @@ def main():
     num_words = get_num_words(text)
     print(f"{num_words} words found in the document")
 
+    char_counts = get_characters(text)
+    print(char_counts)
+    
 # Call main to run program
 if __name__ == "__main__":
     main()

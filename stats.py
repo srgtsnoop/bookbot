@@ -2,3 +2,12 @@ def get_num_words(text):
     """Takes a string and returns the number of words in it."""
     words = text.split()
     return len(words)
+
+def get_characters(text):
+    count = {}
+    for characters in text.lower():
+        if characters in count:
+            count[characters] += 1
+        else:
+            count[characters] = 1
+    return count
