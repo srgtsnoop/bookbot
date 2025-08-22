@@ -1,12 +1,9 @@
+from stats import get_num_words
+
 def get_book_text(filepath):
     """Takes a filepath and returns the contents of the file as a string."""
     with open(filepath) as f:
         return f.read()
-
-def get_num_words(text):
-    """Takes a string and returns the number of words in it."""
-    words = text.split()
-    return len(words)
 
 def main():
     # Use the relative path to your frankenstein.txt file
